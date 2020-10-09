@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment">
+
+    <EditText
+        android:id="@+id/editTextTextcsv"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/custom_inputfeilds"
+        android:drawableStart="@drawable/nic"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="CSV"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextcholder" />
+
+    <EditText
+        android:id="@+id/editTextcholder"
+        android:layout_width="319dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_inputfeilds"
+        android:drawableStart="@drawable/nic"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="Card Holder"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextcno" />
+
+    <EditText
+        android:id="@+id/editTextTextcno"
+        android:layout_width="319dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_inputfeilds"
+        android:drawableStart="@drawable/nic"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="Card Number"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blackback" />
+
+    <Button
+        android:id="@+id/btnproceed"
+        android:layout_width="149dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_bg"
+        android:text="Proceed"
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Payment "
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="375dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:srcCompat="@drawable/visa" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="OR"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/editTextTextexp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_inputfeilds"
+        android:drawableStart="@drawable/nic"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="Exp Date"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextcholder" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="184dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:text="Save Card Details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextexp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="35dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
