@@ -1,6 +1,4 @@
-package com.example.echanneling_all_members_integration.;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.echanneling_all_members_integration;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -13,8 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
-
-import com.example.echanneling_all_members_integration.R;
 
 public class payment_01 extends AppCompatActivity {
 
@@ -70,7 +66,7 @@ public class payment_01 extends AppCompatActivity {
 
                 if((cno.equals(cnotxt.getText().toString())) && (cardholder.equals(choldertxt.getText().toString())) && (exp.equals(exptxt.getText().toString()) )
                         && (csv.equals(csvtxt.getText().toString()))){
-                    Intent intent = new Intent(payment_01.this, schedule.class);
+                    Intent intent = new Intent(payment_01.this, com.example.echanneling_all_members_integration.schedule.class);
                     startActivity(intent);
                     Toast.makeText(payment_01.this , "Your Payment Successfully !", Toast.LENGTH_SHORT).show();
 

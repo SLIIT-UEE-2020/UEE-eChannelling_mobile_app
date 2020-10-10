@@ -1,4 +1,4 @@
-package com.example.echanneling;
+package com.example.echanneling_all_members_integration;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -14,6 +14,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Spinner;
+
+import com.example.echanneling_all_members_integration.Appointment;
+import com.example.echanneling_all_members_integration.R;
 
 public class ChannelingCenterSelectFragment extends Fragment {
     Context context;
@@ -46,7 +49,7 @@ public class ChannelingCenterSelectFragment extends Fragment {
                 } else {
                     Appointment appointment = Appointment.getInstance();
                     appointment.setHospital(pickChannelingCenter.getSelectedItem().toString());
-                    getFragmentManager().beginTransaction().replace(R.id.fragment_container, new DoctorSpecializationFragment()).commit();
+                    getFragmentManager().beginTransaction().replace(R.id.fragment_container, new com.example.echanneling_all_members_integration.DoctorSpecializationFragment()).commit();
                 }
             }
         });
@@ -66,7 +69,7 @@ public class ChannelingCenterSelectFragment extends Fragment {
         backNav.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+                getFragmentManager().beginTransaction().replace(R.id.fragment_container, new com.example.echanneling_all_members_integration.HomeFragment()).commit();
             }
         });
 

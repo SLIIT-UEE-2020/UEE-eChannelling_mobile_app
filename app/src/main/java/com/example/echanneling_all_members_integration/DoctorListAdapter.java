@@ -1,8 +1,7 @@
-package com.example.echanneling;
+package com.example.echanneling_all_members_integration;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.net.URL;
+import com.example.echanneling_all_members_integration.R;
 
 public class DoctorListAdapter extends BaseAdapter {
 

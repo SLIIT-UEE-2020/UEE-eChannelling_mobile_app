@@ -1,24 +1,17 @@
 package com.example.echanneling_all_members_integration;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.Dialog;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
 import com.basgeekball.awesomevalidation.ValidationStyle;
 import com.basgeekball.awesomevalidation.utility.RegexTemplate;
-import com.example.echanneling_all_members_integration.R;
 
 public class MainActivity_02 extends AppCompatActivity {
 
@@ -56,7 +49,7 @@ public class MainActivity_02 extends AppCompatActivity {
         imgback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity_02.this, com.example.echanneling.MedLab.class);
+                Intent intent = new Intent(MainActivity_02.this, com.example.echanneling_all_members_integration.MedLab.class);
                 startActivity(intent);
 
             }

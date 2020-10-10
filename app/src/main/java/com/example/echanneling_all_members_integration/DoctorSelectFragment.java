@@ -1,4 +1,4 @@
-package com.example.echanneling;
+package com.example.echanneling_all_members_integration;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,9 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
+
+import com.example.echanneling_all_members_integration.DoctorSpecializationFragment;
 
 public class DoctorSelectFragment extends Fragment {
 
@@ -47,7 +48,7 @@ public class DoctorSelectFragment extends Fragment {
                 Bundle bundle = new Bundle();
                 bundle.putInt("INDEX_POSITION",position);
 
-                DoctorTimeslotFragment docTimeslotFrag = new DoctorTimeslotFragment();
+                com.example.echanneling_all_members_integration.DoctorTimeslotFragment docTimeslotFrag = new com.example.echanneling_all_members_integration.DoctorTimeslotFragment();
                 docTimeslotFrag.setArguments(bundle);
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, docTimeslotFrag).commit();
 

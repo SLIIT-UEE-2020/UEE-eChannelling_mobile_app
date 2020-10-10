@@ -1,4 +1,4 @@
-package com.example.echanneling;
+package com.example.echanneling_all_members_integration;
 
 import java.util.ArrayList;
 import java.util.List;

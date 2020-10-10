@@ -75,6 +75,45 @@
     </string-array>
 
 
+    <string name="prescription">Prescription</string>
 
+    <string name="prescription_upload">Prescription Upload</string>
+
+    <string name="invalid_name">Please enter a valid name</string>
+
+    <string name="invalid_area">Please enter a valid area</string>
+
+    <string name="invalid_pname">Please enter a valid pharmacy name</string>
+
+    <string name="invalid_details">Please enter valid details</string>
+
+    <string name="invalid_number">Please enter a valid number</string>
+
+    <string name="invalid_lname">Please enter a valid lab name</string>
+
+    <string name="invalid_cardno">Please enter a valid card no</string>
+
+    <string name="invalid_cardholder">Please enter a valid name</string>
+
+    <string name="invalid_expdate">Please enter a date</string>
+
+    <string name="invalid_cvv">Please enter a valid cvv</string>
+
+
+    <string name="title_activity_doctorpopup">doctorpopup</string>
+
+
+
+    <string name="first_fragment_label">First Fragment</string>
+
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <string name="next">Next</string>
+
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 </resources>

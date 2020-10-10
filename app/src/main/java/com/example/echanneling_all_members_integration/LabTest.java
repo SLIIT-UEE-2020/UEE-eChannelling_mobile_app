@@ -1,9 +1,8 @@
-package com.example.echanneling;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.echanneling_all_members_integration;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,6 +12,7 @@ import android.widget.Toast;
 import com.basgeekball.awesomevalidation.AwesomeValidation;
 import com.basgeekball.awesomevalidation.ValidationStyle;
 import com.basgeekball.awesomevalidation.utility.RegexTemplate;
+
 
 public class LabTest extends AppCompatActivity {
 

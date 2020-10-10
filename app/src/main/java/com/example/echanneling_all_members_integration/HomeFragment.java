@@ -1,5 +1,6 @@
-package com.example.echanneling;
+package com.example.echanneling_all_members_integration;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -9,6 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.echanneling_all_members_integration.ChannelingCenterSelectFragment;
+import com.example.echanneling_all_members_integration.ViewAddedAppointments;
+
 public class HomeFragment extends Fragment {
     @Nullable
     @Override
@@ -16,6 +20,8 @@ public class HomeFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
         Button btn_addDoctorAppointment = (Button) v.findViewById(R.id.btn_add_doctor_appointment);
         Button btn_viewAddedAppointments = (Button) v.findViewById(R.id.btn_view_appointments);
+        Button btn_drug_delivery = (Button) v.findViewById(R.id.btn_drug_delivery);
+        Button btn_online_doctor_applintment = (Button) v.findViewById(R.id.btn_online_doctor_applintment);
 
         btn_addDoctorAppointment.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,6 +35,7 @@ public class HomeFragment extends Fragment {
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, new ViewAddedAppointments()).commit();
             }
         });
+
 
         return v;
     }

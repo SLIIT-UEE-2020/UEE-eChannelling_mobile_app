@@ -1,4 +1,4 @@
-package com.example.echanneling;
+package com.example.echanneling_all_members_integration;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +13,9 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.example.echanneling.PatientDetailsFragment;
+import com.example.echanneling.PaymentProcessFragment;
 
 public class AppointmentDetailsFragment extends Fragment {
     Context context;
@@ -73,7 +75,7 @@ public class AppointmentDetailsFragment extends Fragment {
                 bundle.putString("patient_phone_number", appointment.getPatientPhoneNumber());
                 bundle.putString("patinet_age", appointment.getPatientAge());
 
-                PatientDetailsFragment patinetFrag = new PatientDetailsFragment();
+                com.example.echanneling.PatientDetailsFragment patinetFrag = new PatientDetailsFragment();
                 patinetFrag.setArguments(bundle);
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, patinetFrag).commit();
             }
@@ -92,7 +94,7 @@ public class AppointmentDetailsFragment extends Fragment {
                 dialog_yes_btn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        getFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+                        getFragmentManager().beginTransaction().replace(R.id.fragment_container, new com.example.echanneling.HomeFragment()).commit();
                         dialog.dismiss();
                     }
                 });
@@ -112,7 +114,7 @@ public class AppointmentDetailsFragment extends Fragment {
                 Bundle bundle = new Bundle();
                 bundle.putString("appointment_total_charge", appointment.getTotalCharge());
 
-                PaymentProcessFragment paymentProcessFrag = new PaymentProcessFragment();
+                com.example.echanneling.PaymentProcessFragment paymentProcessFrag = new PaymentProcessFragment();
                 paymentProcessFrag.setArguments(bundle);
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, paymentProcessFrag).commit();
             }

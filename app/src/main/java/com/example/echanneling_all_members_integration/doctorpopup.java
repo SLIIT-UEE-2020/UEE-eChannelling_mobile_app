@@ -1,12 +1,13 @@
-package com.example.category;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.echanneling_all_members_integration;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.echanneling_all_members_integration.R;
 
 public class doctorpopup extends AppCompatActivity {
 
@@ -32,7 +33,7 @@ public class doctorpopup extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(doctorpopup.this, channel.class);
+                Intent intent = new Intent(doctorpopup.this, com.example.category.channel.class);
                 startActivity(intent);
                 Toast.makeText(doctorpopup.this, "Searching your consultant", Toast.LENGTH_SHORT).show();
             }

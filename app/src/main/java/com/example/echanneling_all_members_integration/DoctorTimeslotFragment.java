@@ -1,4 +1,4 @@
-package com.example.echanneling;
+package com.example.echanneling_all_members_integration;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,11 +10,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.example.echanneling_all_members_integration.PatientDetailsFragment;
+import com.example.echanneling_all_members_integration.TimeSlotListAdapter;
 
 public class DoctorTimeslotFragment extends Fragment {
 
@@ -85,7 +87,7 @@ public class DoctorTimeslotFragment extends Fragment {
             }
         });
 
-        TimeSlotListAdapter timeSlotAdapter = new TimeSlotListAdapter(currContext, channelDates, channelTimes, activePatients);
+        com.example.echanneling_all_members_integration.TimeSlotListAdapter timeSlotAdapter = new TimeSlotListAdapter(currContext, channelDates, channelTimes, activePatients);
         timeslot_list.setAdapter(timeSlotAdapter);
 
         timeslot_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -95,7 +97,7 @@ public class DoctorTimeslotFragment extends Fragment {
                 Bundle bundle = new Bundle();
                 bundle.putInt("INDEX_POSITION", position);
 
-                PatientDetailsFragment patientFrag = new PatientDetailsFragment();
+                com.example.echanneling_all_members_integration.PatientDetailsFragment patientFrag = new PatientDetailsFragment();
                 patientFrag.setArguments(bundle);
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container, patientFrag).commit();
             }

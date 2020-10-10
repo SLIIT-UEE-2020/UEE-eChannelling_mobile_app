@@ -1,8 +1,7 @@
-package com.example.category;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.echanneling_all_members_integration;
 
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 public class schedule extends AppCompatActivity {
 

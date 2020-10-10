@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNav  = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
-        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, new com.example.echanneling.HomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, new com.example.echanneling_all_members_integration.HomeFragment()).commit();
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -27,19 +27,19 @@ public class MainActivity extends AppCompatActivity {
 
             switch (menuItem.getItemId()){
                 case R.id.navigation_home :
-                    selectedFragment = new com.example.echanneling.HomeFragment();
+                    selectedFragment = new com.example.echanneling_all_members_integration.HomeFragment();
                     break;
 
                 case R.id.navigation_search :
-                    selectedFragment = new com.example.echanneling.SearchFragment();
+                    selectedFragment = new com.example.echanneling_all_members_integration.SearchFragment();
                     break;
 
                 case R.id.navigation_ambulance :
-                    selectedFragment = new com.example.echanneling.AmbulanceFragment();
+                    selectedFragment = new com.example.echanneling_all_members_integration.AmbulanceFragment();
                     break;
 
                 case R.id.navigation_profile :
-                    selectedFragment = new com.example.echanneling.ProfileFragment();
+                    selectedFragment = new com.example.echanneling_all_members_integration.ProfileFragment();
                     break;
             }
 

@@ -1,8 +1,5 @@
 package com.example.echanneling_all_members_integration;
 
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.Intent;
@@ -10,6 +7,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -18,9 +16,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
+
 
 public class MainActivity_01 extends AppCompatActivity {
 
@@ -134,7 +131,7 @@ public class MainActivity_01 extends AppCompatActivity {
                 int month = calender.get(Calendar.MONTH);
                 int year = calender.get(Calendar.YEAR);
 
-                dpd = new DatePickerDialog(MainActivity.this, new DatePickerDialog.OnDateSetListener() {
+                dpd = new DatePickerDialog(MainActivity_01.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker datePicker, int mDay, int mMonth, int mYear) {
                         datetxt.setText(mDay + "/"+ (mMonth + 1) + "/" + (mYear));
@@ -157,7 +154,7 @@ public class MainActivity_01 extends AppCompatActivity {
                 //System.out.println("text date ------------------------ "+datetxt.getText());
 
                 if((doctor.equals(doctortxt.getText().toString())) && (hospital.equals(hospitaltxt.getText().toString())) && (date.equals(datetxt.getText().toString()))){
-                    Intent intent = new Intent(MainActivity_01.this, channel.class);
+                    Intent intent = new Intent(MainActivity_01.this, com.example.category.channel.class);
                     startActivity(intent);
                     Toast.makeText(MainActivity_01.this , "Searching your consultant", Toast.LENGTH_SHORT).show();
 

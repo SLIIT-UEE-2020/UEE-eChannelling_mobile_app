@@ -1,12 +1,11 @@
-package com.example.echanneling;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.echanneling_all_members_integration;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
+
 
 public class Payment extends AppCompatActivity {
 
@@ -25,7 +24,7 @@ public class Payment extends AppCompatActivity {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Payment.this,Purchase.class);
+                Intent intent = new Intent(Payment.this, com.example.echanneling_all_members_integration.Purchase.class);
                 startActivity(intent);
             }
         });
@@ -34,7 +33,7 @@ public class Payment extends AppCompatActivity {
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Payment.this,Purchase2.class);
+                Intent intent = new Intent(Payment.this, com.example.echanneling_all_members_integration.Purchase2.class);
                 startActivity(intent);
             }
         });
@@ -43,7 +42,7 @@ public class Payment extends AppCompatActivity {
         imageView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Payment.this,Purchase3.class);
+                Intent intent = new Intent(Payment.this, com.example.echanneling_all_members_integration.Purchase3.class);
                 startActivity(intent);
             }
         });
@@ -52,7 +51,7 @@ public class Payment extends AppCompatActivity {
         imageView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Payment.this,Purchase4.class);
+                Intent intent = new Intent(Payment.this, com.example.echanneling_all_members_integration.Purchase4.class);
                 startActivity(intent);
             }
         });
